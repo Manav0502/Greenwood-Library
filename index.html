@@ -4,16 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Greenwood Public Library</title>
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-100 selection:text-emerald-900">
 
-  <!-- 1. NAVIGATION SECTION (Minimal Navbar with Mobile Hamburger) -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between flex-wrap">
       
-      <!-- Logo & Badge -->
       <a href="#" class="flex items-center gap-3 group">
         <span class="font-light text-2xl tracking-tight text-slate-900 group-hover:text-emerald-800 transition-colors">
           Greenwood<span class="font-normal text-emerald-700">.</span>
@@ -45,14 +42,12 @@
         </a>
       </nav>
 
-      <!-- Desktop Action Button -->
       <div class="hidden md:block">
         <a href="#contact" class="inline-block bg-white text-black font-medium text-sm px-5 py-2.5 rounded-full border border-slate-900 hover:bg-transparent hover:text-slate-900 transition-all duration-300">
           Visit Us
         </a>
       </div>
 
-      <!-- Mobile Dropdown Menu -->
       <div class="hidden peer-checked:flex md:hidden w-full flex-col gap-3 bg-white pt-4 pb-6 border-t border-slate-200 mt-2 font-light text-sm text-slate-700">
         <a href="#sections" class="hover:text-emerald-800 transition-colors">Sections</a>
         <a href="#gallery" class="hover:text-emerald-800 transition-colors">Gallery</a>
@@ -67,13 +62,11 @@
   </header>
 
   <main>
-    <!-- 2. HERO SECTION (Layout with Image Aligned on the Right Side) -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 sm:pt-16 pb-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
-        <!-- Left Column: Content & CTAs -->
         <div>
-          <h1 class="font-light text-3xl sm:text-6xl lg:text-6xl tracking-tight text-slate-900 leading-[1.00]">
+          <h1 class="font-light text-3xl sm:text-6xl tracking-tight text-slate-900 leading-[1.00]">
             <span class="whitespace-nowrap">Your Neighbourhood</span><br />
             Library
           </h1>
@@ -81,7 +74,6 @@
             Thousands of books, quiet reading rooms, community events and free Wi-Fi -- serving Greenwood since 1983.
           </p>
 
-          <!-- Buttons -->
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="#sections" class="bg-black text-white font-medium text-sm px-6 py-3.5 rounded-full hover:bg-emerald-900 transition-all shadow-sm">
               Explore Collection
@@ -92,7 +84,6 @@
           </div>
         </div>
 
-        <!-- Right Column: First Image Aligned Right -->
         <div class="overflow-hidden rounded-2xl group border border-slate-200/80 shadow-sm">
           <img 
             src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1200" 
@@ -103,7 +94,6 @@
 
       </div>
 
-      <!-- 4-Column Stats Row -->
       <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-slate-200">
         <div>
           <p class="font-light text-3xl sm:text-4xl text-slate-900">12,000+</p>
@@ -124,49 +114,42 @@
       </div>
     </section>
 
-    <!-- 3. SECTIONS (Interactive Grid Cards with Subtle Hover Shading) -->
     <section id="sections" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-10">
         <p class="text-slate-600 text-sm mt-2 font-light">OUR SECTIONS</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Section Card 1 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-emerald-50/80 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-emerald-900 transition-colors">Fiction & Literature</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Novels, short stories, and poetry - from timeless classics to new voices.</p>
           <a class="mt-auto pt-6 text-sm underline underline-offset-4 text-slate-700 group-hover:text-emerald-900 transition-colors">Browse Fiction</a>
         </div>
 
-        <!-- Section Card 2 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-amber-50/80 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-amber-900 transition-colors">Children's Corner</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Picture books, early readers, and a cozy space for young learners.</p>
           <a class="mt-auto pt-6 text-sm underline underline-offset-4 text-slate-700 group-hover:text-amber-900 transition-colors">Browse Childern's</a>
         </div>
 
-        <!-- Section Card 3 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-sky-50/80 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-sky-900 transition-colors">Science & Technology</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Research journals, textbooks, and STEM reference materials.</p>
           <a class="mt-auto pt-6 text-sm underline underline-offset-4 text-slate-700 group-hover:text-sky-900 transition-colors">Browse Science</a>
         </div>
 
-        <!-- Section Card 4 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-rose-50/80 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-rose-900 transition-colors">History & Culture</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Local archives, world civilisations, art history and cultural studies.</p>
           <a class="mt-auto pt-6 text-sm underline underline-offset-4 text-slate-700 group-hover:text-rose-900 transition-colors">Browse History</a>
         </div>
 
-        <!-- Section Card 5 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-violet-50/80 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-violet-900 transition-colors">Periodicals & Newspapers</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Daily newspaper, weekly magazines, and curated journals subscriptions.</p>
           <a class="mt-auto pt-6 text-sm underline underline-offset-4 text-slate-700 group-hover:text-violet-900 transition-colors">Browse Periodicals</a>
         </div>
 
-        <!-- Section Card 6 -->
         <div class="group flex flex-col p-8 rounded-2xl border border-slate-200/80 bg-white hover:bg-zinc-100 transition-all duration-300">
           <h3 class="font-light text-2xl text-slate-900 mt-2 group-hover:text-zinc-900 transition-colors">Digital Media Lab</h3>
           <p class="text-slate-600 text-sm mt-3 leading-relaxed font-light">Public computers, E-books access and digital literary resources.</p>
@@ -175,7 +158,6 @@
       </div>
     </section>
 
-    <!-- 4. GALLERY SECTION (2x2 Grid with Hover Zoom) -->
     <section id="gallery" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-10">
         <p class="text-slate-600 text-sm mt-2 font-light">OUR SPACES</p>
@@ -183,7 +165,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Gallery Card 1 -->
         <div class="group overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&q=80&w=800" 
@@ -198,7 +179,6 @@
           </div>
         </div>
 
-        <!-- Gallery Card 2 -->
         <div class="group overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800" 
@@ -213,7 +193,6 @@
           </div>
         </div>
 
-        <!-- Gallery Card 3 -->
         <div class="group overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" 
@@ -228,7 +207,6 @@
           </div>
         </div>
 
-        <!-- Gallery Card 4 -->
         <div class="group overflow-hidden">
           <img 
             src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&q=80&w=800" 
@@ -245,44 +223,37 @@
       </div>
     </section>
 
-    <!-- 5. VALUES SECTION (Asymmetrical Bento Grid Layout) -->
     <section id="values" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="mb-10">
         <p class="text-slate-600 text-sm mt-2 font-light">WHY GREENWOOD</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Bento Item 1: Slate -->
         <div class="bg-slate-200/60 hover:bg-slate-200 transition-colors p-6 rounded-2xl border border-slate-300/60 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-slate-700">ABOUT</span>
           <h4 class="font-light text-2xl text-slate-900 mt-4">A PLACE FOR<br>EVERYONE.</h4>
         </div>
 
-        <!-- Bento Item 2: Green -->
         <div class="bg-green-100/60 hover:bg-green-100 transition-colors p-6 rounded-2xl border border-green-200/80 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-green-800">COMMUNITY</span>
           <h4 class="font-light text-2xl text-green-950 mt-4">OPEN DOORS,<br>OPEN MINDS.</h4>
         </div>
 
-        <!-- Bento Item 3: Yellow -->
         <div class="bg-yellow-100/60 hover:bg-yellow-100 transition-colors p-6 rounded-2xl border border-yellow-200/80 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-yellow-800">40+ YEARS</span>
           <h4 class="font-light text-2xl text-yellow-950 mt-4">TRUSTED BY<br>GENERATIONS.</h4>
         </div>
 
-        <!-- Bento Item 4: Orange -->
         <div class="bg-orange-100/60 hover:bg-orange-100 transition-colors p-6 rounded-2xl border border-orange-200/80 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-orange-800">EVENTS</span>
           <h4 class="font-light text-2xl text-orange-950 mt-4">LEARN BEYOND<br>BOOKS.</h4>
         </div>
 
-        <!-- Bento Item 5: Violet -->
         <div class="bg-violet-100/60 hover:bg-violet-100 transition-colors p-6 rounded-2xl border border-violet-200/80 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-violet-800">DIGITAL</span>
           <h4 class="font-light text-2xl text-violet-950 mt-4">E-BOOKS, WI-FI,<br>& COMPUTERS.</h4>
         </div>
 
-        <!-- Bento Item 6: Black -->
         <div class="bg-slate-200/60 hover:bg-slate-200 transition-colors p-6 rounded-2xl border border-slate-300/60 flex flex-col justify-between">
           <span class="text-xs font-semibold uppercase tracking-wider text-slate-700">ACCESS</span>
           <h4 class="font-light text-2xl text-slate-900 mt-4">NO BARRIERS<br>TO KNOWLEDGE.</h4>
@@ -290,7 +261,6 @@
       </div>
     </section>
 
-    <!-- 6. ABOUT SECTION (Editorial Paragraph Columns) -->
     <section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-200">
       <div class="max-w-5xl mx-auto mb-10">
         <h2 class="font-light text-4xl sm:text-5xl text-slate-900 tracking-tight leading-tight">
@@ -298,7 +268,6 @@
         </h2>
       </div>
 
-      <!-- Newspaper Editorial Columns -->
       <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-10 text-slate-600 font-light text-sm sm:text-base leading-relaxed">
         <p>
           Greenwood Public Library has been at the heart of this community since 1983. We believe everyone deserves free access to knowledge, regardless of age, income, or background. Our six sections cover everything from fiction to digital media.
@@ -309,28 +278,25 @@
       </div>
     </section>
 
-    <!-- 7. MEMBERSHIP SECTION -->
     <section id="membership" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="border-b border-slate-200 pb-6">
         <p class="text-slate-500 text-xs font-medium uppercase tracking-[0.2em]">Membership</p>
       </div>
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 py-8">
-        <h2 class="font-light text-4xl sm:text-5xl text-slate-900 tracking-tight font-semibold">Join the Library</h2>
+        <h2 class="text-4xl sm:text-5xl text-slate-900 tracking-tight font-semibold">Join the Library</h2>
         <a href="#contact" class="inline-block w-max border border-slate-300 hover:border-slate-900 text-slate-800 text-sm px-6 py-2.5 rounded-full transition-colors">Sign Up</a>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch">
-        <!-- Membership Introduction -->
         <div class="bg-emerald-50 border border-emerald-100 p-8 flex flex-col justify-between min-h-[500px]">
           <div>
             <span class="text-xs uppercase tracking-[0.18em] text-slate-500">Choose a plan</span>
-            <h3 class="font-light text-3xl text-slate-900 mt-8 leading-tight font-semibold">Everyone is<br />welcome here.</h3>
+            <h3 class="text-3xl text-slate-900 mt-8 leading-tight font-semibold">Everyone is<br />welcome here.</h3>
             <p class="text-slate-500 text-sm mt-6 leading-relaxed font-light">Membership unlocks borrowing, study rooms, and priority events.</p>
           </div>
           <a href="#contact" class="inline-block w-max bg-slate-900 hover:bg-emerald-900 text-white text-sm px-6 py-3 rounded-full transition-colors">Learn More</a>
         </div>
 
-        <!-- Basic Membership -->
         <div class="group border border-slate-200 bg-white overflow-hidden flex flex-col min-h-[500px]">
           <div class="relative overflow-hidden h-60">
             <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&q=80&w=600" alt="Books on a shelf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -338,12 +304,11 @@
           <div class="p-7 flex flex-col flex-1">
             <h3 class="font-medium text-lg text-slate-900">Basic</h3>
             <p class="text-2xl font-light text-slate-900 mt-2">Free</p>
-            <p class="text-xs text-slate-400 mt-3">3 books &bull; Reading rooms &bull; Wi-Fi</p>
+            <p class="text-xs text-slate-400 mt-3">3 books - Reading rooms - Wi-Fi</p>
             <a href="#contact" class="mt-auto block text-center border border-slate-300 hover:border-slate-900 text-slate-800 text-sm py-2.5 rounded-full transition-colors">Join Free</a>
           </div>
         </div>
 
-        <!-- Student Membership -->
         <div class="group relative border border-slate-200 bg-white overflow-hidden flex flex-col min-h-[500px]">
           <span class="absolute top-4 right-4 bg-slate-900 text-white text-[10px] font-medium tracking-wide px-3 py-1.5 rounded-full z-10">Popular</span>
           <div class="relative overflow-hidden h-60">
@@ -352,12 +317,11 @@
           <div class="p-7 flex flex-col flex-1">
             <h3 class="font-medium text-lg text-slate-900">Student</h3>
             <p class="text-2xl font-light text-slate-900 mt-2">&#8377;200<span class="text-xs text-slate-400">/yr</span></p>
-            <p class="text-xs text-slate-400 mt-3">8 books &bull; Digital catalogue &bull; Study rooms</p>
+            <p class="text-xs text-slate-400 mt-3">8 books - Digital catalogue - Study rooms</p>
             <a href="#contact" class="mt-auto block text-center bg-slate-900 hover:bg-emerald-900 text-white text-sm py-2.5 rounded-full transition-colors">Join Now</a>
           </div>
         </div>
 
-        <!-- Family Membership -->
         <div class="group border border-slate-200 bg-white overflow-hidden flex flex-col min-h-[500px]">
           <div class="relative overflow-hidden h-60">
             <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=600" alt="Colourful library books" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
@@ -365,14 +329,13 @@
           <div class="p-7 flex flex-col flex-1">
             <h3 class="font-medium text-lg text-slate-900">Family</h3>
             <p class="text-2xl font-light text-slate-900 mt-2">&#8377;500<span class="text-xs text-slate-400">/yr</span></p>
-            <p class="text-xs text-slate-400 mt-3">15 books &bull; All benefits &bull; Priority events</p>
+            <p class="text-xs text-slate-400 mt-3">15 books - All benefits - Priority events</p>
             <a href="#contact" class="mt-auto block text-center border border-slate-300 hover:border-slate-900 text-slate-800 text-sm py-2.5 rounded-full transition-colors">Join Now</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 8. TESTIMONIAL SECTION -->
     <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-200">
       <div class="flex flex-col sm:flex-row items-start gap-8 sm:gap-12">
         <img 
@@ -389,7 +352,6 @@
       </div>
     </section>
 
-    <!-- 9. CONTACT CALL-TO-ACTION -->
     <section id="contact" class="max-w-7xl mx-auto bg-emerald-50 border border-emerald-100 px-4 sm:px-6 lg:px-8 py-16">
       <div>
         <span class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Contact</span>
@@ -405,23 +367,21 @@
           <a href="https://maps.google.com" target="_blank" class="bg-slate-900 hover:bg-emerald-900 text-white font-medium text-sm px-6 py-3 rounded-full transition-colors">
             Get Directions
           </a>
-          <span class="text-sm text-slate-500 font-light">(555) 012-3456 &bull; hello@greenwoodlibrary.org</span>
+          <span class="text-sm text-slate-500 font-light">(555) 012-3456 - hello@greenwoodlibrary.org</span>
         </div>
       </div>
     </section>
 
-    <!-- 10. EVENTS SECTION -->
     <section id="events" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="border-b border-slate-200 pb-6">
         <p class="text-slate-500 text-xs font-medium uppercase tracking-[0.2em]">Events</p>
       </div>
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 py-8">
-        <h2 class="font-light text-4xl sm:text-5xl text-slate-900 tracking-tight font-semibold">What's Coming Up</h2>
+        <h2 class="text-4xl sm:text-5xl text-slate-900 tracking-tight font-semibold">What's Coming Up</h2>
         <a href="#events" class="inline-block w-max border border-slate-300 hover:border-slate-900 text-slate-800 text-sm px-6 py-2.5 rounded-full transition-colors">All Events</a>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-10">
-        <!-- Event Card 1 -->
         <article class="group min-w-0">
           <div class="overflow-hidden rounded-xl h-60">
             <img 
@@ -431,12 +391,11 @@
             />
           </div>
           <div class="pt-5">
-            <h3 class="font-light text-base text-slate-900 leading-relaxed font-semibold">Summer Reading Challenge - open to children aged 6-14</h3>
+            <h3 class="text-base text-slate-900 leading-relaxed font-semibold">Summer Reading Challenge - open to children aged 6-14</h3>
             <p class="text-sm text-slate-400 mt-3 font-light">5 Aug 2026</p>
           </div>
         </article>
 
-        <!-- Event Card 2 -->
         <article class="group min-w-0">
           <div class="overflow-hidden rounded-xl h-60">
             <img 
@@ -446,12 +405,11 @@
             />
           </div>
           <div class="pt-5">
-            <h3 class="font-light text-base text-slate-900 leading-relaxed font-semibold">Book Club: Discussing <span class="italic">The God of Small Things</span></h3>
+            <h3 class="text-base text-slate-900 leading-relaxed font-semibold">Book Club: Discussing <span class="italic">The God of Small Things</span></h3>
             <p class="text-sm text-slate-400 mt-3 font-light">10 Aug 2026</p>
           </div>
         </article>
 
-        <!-- Event Card 3 -->
         <article class="group min-w-0">
           <div class="overflow-hidden rounded-xl h-60">
             <img 
@@ -461,12 +419,11 @@
             />
           </div>
           <div class="pt-5">
-            <h3 class="font-light text-base text-slate-900 leading-relaxed font-semibold">Digital Literacy Workshop - free, no registration needed</h3>
+            <h3 class="text-base text-slate-900 leading-relaxed font-semibold">Digital Literacy Workshop - free, no registration needed</h3>
             <p class="text-sm text-slate-400 mt-3 font-light">18 Aug 2026</p>
           </div>
         </article>
 
-        <!-- Event Card 4 -->
         <article class="group min-w-0">
           <div class="overflow-hidden rounded-xl h-60">
             <img 
@@ -476,7 +433,7 @@
             />
           </div>
           <div class="pt-5">
-            <h3 class="font-light text-base text-slate-900 leading-relaxed font-semibold">Author Meet: Priya Sharma - Q&A and book signing</h3>
+            <h3 class="text-base text-slate-900 leading-relaxed font-semibold">Author Meet: Priya Sharma - Q&A and book signing</h3>
             <p class="text-sm text-slate-400 mt-3 font-light">25 Aug 2026</p>
           </div>
         </article>
@@ -484,12 +441,10 @@
     </section>
   </main>
 
-  <!-- 11. FOOTER SECTION -->
   <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
         
-        <!-- Brand & Social Icons -->
         <div>
           <span class="font-light text-2xl text-white tracking-tight">Greenwood<span class="text-emerald-500">.</span></span>
           <p class="text-slate-400 text-xs font-light mt-3 leading-relaxed">
@@ -502,7 +457,6 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
         <div>
           <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Pages</h4>
           <ul class="space-y-2 text-xs text-slate-400 font-light">
@@ -514,7 +468,6 @@
           </ul>
         </div>
 
-        <!-- Sections -->
         <div>
           <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Sections</h4>
           <ul class="space-y-2 text-xs text-slate-400 font-light">
@@ -526,7 +479,6 @@
           </ul>
         </div>
 
-        <!-- Details -->
         <div>
           <h4 class="text-white text-xs font-semibold uppercase tracking-wider mb-4">Library Details</h4>
           <p class="text-xs text-slate-400 font-light leading-relaxed">
@@ -538,7 +490,6 @@
         </div>
       </div>
 
-      <!-- Copyright & Legal -->
       <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 font-light gap-4">
         <p>&copy; 2026 Greenwood Public Library. All rights reserved.</p>
         <div class="flex gap-6">
